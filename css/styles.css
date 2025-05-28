@@ -7,6 +7,9 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+
     width: 600px;
     height: 98vh;
     margin: 0 auto;
@@ -32,13 +35,14 @@ strong.strong {
     text-transform: uppercase;
     line-height: 1.2;
 
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 10px;
     padding: 0;
 }
 
 main {
     padding: 20px;
+    flex: 1;
 }
 
 ul {
@@ -64,9 +68,15 @@ li a {
 }
 
 .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
     border-top: 5px dashed black;
     height: 100px;
+
+    flex: 0;
 }
 
 h2 {
